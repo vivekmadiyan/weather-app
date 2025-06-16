@@ -12,20 +12,17 @@ function App() {
     }
 
     try {
-      const response = fetch(`/api/weather?address=${city}`);
-
-
+      const response = await fetch(`/api/weather?address=${city}`);
+      const data = await response.json();
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || "Something went wrong");
+        throw new Error(data.error || "Something went wrong");
       }
 
-      const data = await response.json();
       setResult(data);
       setError("");
     } catch (err) {
-      setError(err.message);
+      setError(err.message || "Failed to fetch weather data");
       setResult(null);
     }
   };
@@ -78,3 +75,4 @@ function App() {
 }
 
 export default App;
+
