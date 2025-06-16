@@ -12,7 +12,8 @@ function App() {
     }
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/weather?address=${city}`);
+      const response = fetch(`/api/weather?address=${city}`);
+
 
 
       if (!response.ok) {
