@@ -25,12 +25,6 @@ Live Demo 👉 [https://weather-app-ws3s.onrender.com](https://weather-app-ws3s.
 
 ---
 
-## 📸 Preview
-
-![App Screenshot](https://user-images.githubusercontent.com/your-github-id/weather-screenshot.png)  
-> _(Add your screenshot here if you want)_
-
----
 
 ## 🛠️ Installation & Setup (Optional)
 
